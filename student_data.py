@@ -11,6 +11,7 @@ import numpy as np
 
 df = pd.read_csv("data.csv")
 st.write(df)
+st.write(df.shape)
 Sensor_value = np.array([2])
 df['student'] = Sensor_value
 
@@ -29,6 +30,7 @@ def convert_df(df):
 csv = convert_df(df)
 print(csv)
 st.write(df)
+st.write(df.shape)
 st.write(csv)
 
 df.to_csv (r'data.csv', index = False, header=True)
